@@ -17,7 +17,7 @@ services:
       slg-network:
         ipv4_address: 192.168.10.2
 
-    command: bash -c "./config.sh && ./juneogo --config-file='.juneogo/config.json'"
+    command: bash -c "./juneogo --config-file='.juneogo/config.json'"
     # Max-size of 10m and max-file of 3 to avoid filling up the disk
     logging:
       driver: 'json-file'
