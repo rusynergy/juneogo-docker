@@ -3,10 +3,10 @@ version: '2'
 services:
   juneogo:
     build: .
-    container_name: juneogo
+    container_name: juneogo-synergy
     restart: unless-stopped
     ports:
-      # - 9650:9650 # port for API calls - will enable remote RPC calls to your node (mandatory for Supernet/ Blockchain deployers)
+      - 9650:9650 # port for API calls - will enable remote RPC calls to your node (mandatory for Supernet/ Blockchain deployers)
       - 9651:9651 # 9651 for staking
 
     volumes:
