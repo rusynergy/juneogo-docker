@@ -11,14 +11,7 @@ Please make sure that you have Docker and docker-compose installed on your syste
 Copy the files to the server in your home directory with the following command:
 
 ```bash
-git clone https://github.com/Juneo-io/juneogo-docker
-```
-
-By default, your node will not accept remote RPC calls. If you would like to enable remote calls to your node, please expose port `9650` in the `docker-compose.yml` file:
-
-```yml
-ports:
-  - 9650:9650 # port for API calls - will enable remote RPC calls to your node (mandatory for Supernet/ Blockchain deployers)
+git clone https://github.com/rusynergy/juneogo-docker
 ```
 
 # 3. Run JuneoGo
