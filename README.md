@@ -91,5 +91,5 @@ sudo chown -R juneogo .juneogo/
 
 To enter the juneogo Docker container, please execute:
 ```bash
-docker exec -ti juneogo /bin/bash
+docker exec -ti juneogo-synergy /bin/bash
 ```
