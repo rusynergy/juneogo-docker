@@ -68,6 +68,18 @@ curl -X POST --data '{
 }' -H 'content-type:application/json;' 192.168.10.2:9650/ext/info
 ```
 
+
+```bash
+curl -X POST --data '{
+    "jsonrpc":"2.0",
+    "id"     :1,
+    "method" :"info.isBootstrapped",
+    "params": {
+        "chain":"27zabyVSGPx546Z38JAi4gsYvmX6zQYW11NXJXMokfvCwxhdUH"
+    }
+}' -H 'content-type:application/json;' 192.168.10.2:9650/ext/info
+```
+
 Example response:
 ```bash
 {
